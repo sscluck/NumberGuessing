@@ -23,6 +23,7 @@ THE SOFTWARE.
 """
 
 # Authors: Sally, Stephanie
+# Version 0
 # Script that runs a number guessing game
 #
 # Asks the user to enter a lower and upper bound, then prompts the user

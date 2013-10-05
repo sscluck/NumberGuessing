@@ -22,6 +22,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 """
 
+# Authors: Sally, Stephanie
+# Version 0
+
 from random import *
 import unittest
 
@@ -71,10 +74,11 @@ def playGame(lower_bound, upper_bound):
 	# 	random number
 
 	number = randint(lower_bound, upper_bound)
-	guess = number+1
+
+	isGuessed = False
 
 	tries = 0
-	while (guess != number):
+	while (not isGuessed):
 		guess = getInt('Enter your guess:')
 		
 		if (guess < lower_bound) or (guess > upper_bound):
@@ -86,6 +90,9 @@ def playGame(lower_bound, upper_bound):
 
 		elif (guess < number):
 			print 'Go higher'
+
+		else:
+			isGuessed = True
 
 
 		tries += 1
