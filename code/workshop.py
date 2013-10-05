@@ -60,10 +60,10 @@ def setBounds():
 		lower_bound = getInt('Enter a lower bound:')
 		upper_bound = getInt('Enter an upper bound:')
 
-		if (lower_bound <= upper_bound)
+		if (lower_bound <= upper_bound):
 			isValid = True
 
-		else
+		else:
 			print 'Invalid bounds'
 
 	return (lower_bound, upper_bound)
